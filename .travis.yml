@@ -9,7 +9,6 @@ gemfile:
   - Gemfile
 env:
   - DB=mysql
-before_script:
-  - make setup
+install: make setup
 script:
   - make test
