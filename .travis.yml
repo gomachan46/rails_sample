@@ -11,4 +11,4 @@ env:
   - DB=mysql
 install: make setup
 script:
-  - make test
+  - travis-wait 30 make test
