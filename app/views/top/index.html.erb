@@ -1,0 +1,5 @@
+<p>top</p>
+<% if flash[:hello] %>
+    <%# 引き回されたflash[:hello]はここで一度だけ消化されておしまいになる %>
+    <p>hello, <%= flash[:hello] %></p>
+<% end %>
